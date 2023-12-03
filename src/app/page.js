@@ -16,15 +16,14 @@ export default function Home() {
     <div className="flex flex-col gap-16 md:gap-32">
       <HeroSection />
       <Features />
-      <Services />
+      {/* <Services />
       <QualityFeatures />
-      <CoreFeatures />
+      <CoreFeatures /> */}
       <Work />
-      <div id="programs"><Pricing /></div>
-      
-      <Team />
+      <Pricing />
+      {/* <Team />
       <Testimonials />
-      <Subscribe />
+      <Subscribe /> */}
       <Community />
     </div>
   );

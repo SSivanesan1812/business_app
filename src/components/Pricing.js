@@ -42,6 +42,7 @@ const PricingCard = ({ name, title, price, btnText, trail }) => {
           {trail}
         </span>
       </div>
+      
     </div>
   );
 };
