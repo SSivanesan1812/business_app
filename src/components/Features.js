@@ -26,23 +26,23 @@ const Features = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-5 text-center mt-10 md:mt-20">
         <FeatureProduct
           imgSrc="/features/1.svg"
-          title="Fast Performance"
-          desc="Get your blood tests delivered at home collect a sample from the your blood tests."
+          title="Hands-On Learning virtually :"
+          desc="Gain valuable hands-on experience that prepares you for the challenges of your chosen field."
         />
         <FeatureProduct
           imgSrc="/features/2.svg"
-          title="Partnership deal"
-          desc="Get your blood tests delivered at home collect a sample from the your blood tests."
+          title="Professional Certificates:"
+          desc="Earn recognized certificates upon program completion, enhancing your credibility in the job market."
         />
         <FeatureProduct
           imgSrc="/features/3.svg"
-          title="Pro Subscription"
-          desc="Get your blood tests delivered at home collect a sample from the your blood tests."
+          title="Lifetime Access to Resources:"
+          desc="Enjoy ongoing access to course materials and resources even after program completion."
         />
         <FeatureProduct
           imgSrc="/features/4.svg"
-          title="Customer Support"
-          desc="Get your blood tests delivered at home collect a sample from the your blood tests."
+          title="Career Advancement Support:"
+          desc="Receive assistance in crafting an impactful resume and preparing for interviews."
         />
       </div>
     </section>

@@ -20,7 +20,8 @@ export default function Home() {
       <QualityFeatures />
       <CoreFeatures />
       <Work />
-      <Pricing />
+      <div id="programs"><Pricing /></div>
+      
       <Team />
       <Testimonials />
       <Subscribe />
