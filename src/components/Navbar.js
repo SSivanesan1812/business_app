@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
           <h2 className="text-3xl">
-            <span className="text-rose-600">Rindhu</span>EduTech
+            <span className="text-rose-600">Rindha</span>EduTech
           </h2>
         </Link>
 
