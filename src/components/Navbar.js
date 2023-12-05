@@ -11,6 +11,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
+import Pricing from "./Pricing";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
           <h2 className="text-3xl">
-            <span className="text-rose-600">Rindha</span>EduTech
+            <span className="text-rose-600">Rindha </span>EduTech
           </h2>
         </Link>
 
@@ -60,7 +61,7 @@ const Navbar = () => {
             >
               <CloseOutlinedIcon />
             </button>
-            {["home", "features", "pricing", "Community"].map((link) => (
+            {["home"].map((link) => (
               <li
                 key={link}
                 className={`${
@@ -71,6 +72,47 @@ const Navbar = () => {
                 <Link href={`#${link}`}>{link}</Link>
               </li>
             ))}
+
+{["features"].map((link) => (
+              <li
+                key={link}
+                className={`${
+                  selectedItem === link ? "text-rose-600" : ""
+                } capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600`}
+                onClick={() => setSelectedItem(link)}
+              >
+                <Link href={`#${link}`}>{link}</Link>
+              </li>
+            ))}
+
+
+{["Programs"].map((link) => (
+              <li
+                key={link}
+                className={`${
+                  selectedItem === link ? "text-rose-600" : ""
+                } capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600`}
+                onClick={() => setSelectedItem(link)}
+              >
+                <Link href={`#${"pricing"}`}>{link}</Link>
+              </li>
+            ))}
+
+
+{["Contact us"].map((link) => (
+              <li
+                key={link}
+                className={`${
+                  selectedItem === link ? "text-rose-600" : ""
+                } capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600`}
+                onClick={() => setSelectedItem(link)}
+              >
+                <Link href={`#${"community"}`}>{link}</Link>
+              </li>
+            ))}
+
+
+
             <div className="md:hidden mx-auto absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-3">
               <Link
                 href="https://www.facebook.com/profile.php?id=100017192357822&sk"

@@ -5,7 +5,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata = {
-  title: "Rindhu EduTech",
+  title: "Rindha EduTech",
   description: "Internship and Training Hub",
 };
 
