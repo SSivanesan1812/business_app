@@ -6,7 +6,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ButtonGroup from "./ButtonGroup";
 
-const Card = ({ star, title, imgSrc }) => {
+const Card = ({ star,testimon,name, title, imgSrc }) => {
   return (
     <div className="mx-2 flex flex-col gap-4 select-none cursor-pointer border border-[#4e4e4e31] p-10 rounded-lg hover:shadow-xl transition-all">
       <div className="text-rose-600">
@@ -18,21 +18,19 @@ const Card = ({ star, title, imgSrc }) => {
       </div>
       <h2 className="text-lg font-semibold mb-2">{title}</h2>
       <p className="leading-loose">
-        Get working experience to work with this amazing team & in future want
-        to work together for bright future projects and also make deposit to
-        freelancer.
+        {testimon}
       </p>
       <div className="flex items-center gap-4 mt-5">
         <Image src={imgSrc} width={50} height={50} alt="testimonials" />
         <div>
-          <h3 className="font-semibold">Naseem Khan</h3>
-          <Link
+          <h3 className="font-semibold">{name}</h3>
+          {/* <Link
             href="https://github.com/NaseemKhan005"
             target="_blank"
             className="text-rose-600 font-[500]"
           >
-            @naseemkhan
-          </Link>
+            
+          </Link> */}
         </div>
       </div>
     </div>
@@ -47,34 +45,50 @@ const Testimonials = () => {
     >
       <div>
         <span className="service-name text-center ">TESTIMONIAL</span>
-        <h2 className="title text-center ">Meet Client Satisfaction</h2>
+        <h2 className="title text-center ">Meet Students Satisfaction</h2>
       </div>
       <Carousel {...carouselParams}>
         <div>
           <Card
             star={<StarHalfRoundedIcon />}
-            title="Modern look & trending design"
+            testimon="I entered this internship program with a basic understanding of cloud technologies, 
+            and I am leaving with a wealth of knowledge and practical skills. 
+            The self-learning courses were engaging, and the tasks challenged me to apply what I learned. 
+            I highly recommend this program to anyone looking to kickstart their career in cloud computing"
+            title="AWS Cloud Intern"
+            name="Raj Kapoor"
             imgSrc="/testimonials/1.png"
           />
         </div>
         <div>
           <Card
-            title="Layout and organized layers"
+            title="Data Analysis Intern"
+            testimon="Joining this internship program with a foundational knowledge of data analysis, I can confidently say it has been a transformative experience. 
+            The self-learning courses delved deep into statistical methods and data visualization tools, making the learning process engaging and applicable. The hands-on tasks challenged me to analyze real-world datasets, honing my analytical skills."
             imgSrc="/testimonials/2.png"
+            name="Maya Reddy"
           />
         </div>
         <div>
           <Card
             star={<StarRoundedIcon />}
-            title="Design Quality & performance"
+            title="Artificial Intelligence Intern"
+            testimon="Entering this artificial intelligence internship program with a curiosity for AI, I'm leaving with a profound understanding and hands-on experience that exceeded my expectations. 
+            The self-learning courses were intellectually stimulating, covering the breadth of AI concepts. 
+            The tasks challenged me to implement machine learning algorithms and work on real AI applications. "
+            name="Arjun Sharma"
             imgSrc="/testimonials/3.png"
           />
         </div>
         <div>
           <Card
             star={<StarHalfRoundedIcon />}
-            title="Layout and organized layers"
+            title="UI/UX Intenr"
+            testimon="This UI/UX design internship program exceeded my expectations in every way. 
+            The self-learning courses equipped me with a solid foundation in design theory, and the tasks pushed me to apply these principles in real-world scenarios.
+            I confidently recommend this program to anyone looking to craft meaningful and user-friendly digital experiences"
             imgSrc="/testimonials/4.png"
+            name="Arnav Singhania"
           />
         </div>
       </Carousel>

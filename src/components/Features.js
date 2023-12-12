@@ -26,8 +26,8 @@ const Features = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-5 text-center mt-10 md:mt-20">
         <FeatureProduct
           imgSrc="/features/1.svg"
-          title="Hands-On Learning virtually :"
-          desc="Gain valuable hands-on experience that prepares you for the challenges of your chosen field."
+          title="Self learning courses:"
+          desc="Courses prodided in colloboration with top companies which, you can learn at your pace."
         />
         <FeatureProduct
           imgSrc="/features/2.svg"

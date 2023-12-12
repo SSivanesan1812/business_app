@@ -21,9 +21,9 @@ export default function Home() {
       <CoreFeatures /> */}
       <Work />
       <Pricing />
-      {/* <Team />
+      {/* <Team /> */}
       <Testimonials />
-      <Subscribe /> */}
+      {/* <Subscribe /> */}
       <Community />
     </div>
   );
